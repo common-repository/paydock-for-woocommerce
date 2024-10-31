@@ -1,0 +1,201 @@
+#paydockWidgetCard, #paydockWidgetCard_wrapper {
+    min-height: 260px;
+    scrollbar-width: thin;
+    position: relative;
+}
+
+#paydockWidgetCard_wrapper:before, #paydockWidgetBankAccount_wrapper:before {
+    content: 'loading...';
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#paydockWidgetCard::-webkit-scrollbar-thumb {
+    border: 1px solid black; /* creates padding around scroll thumb */
+}
+
+#paydockWidgetBankAccount, #paydockWidgetBankAccount_wrapper {
+    min-height: 200px;
+    position: relative;
+}
+
+#paydockWalletPayPalButton {
+    align-items: center;
+    display: flex;
+}
+
+.logo-comm-bank {
+    text-align: center;
+}
+
+.woocommerce-page .logo-comm-bank img {
+    height: 50px;
+}
+
+#paydockWidgetCard iframe {
+    border: 0;
+    width: 100%;
+    height: 280px;
+}
+
+#paydockWidgetBankAccount iframe {
+    border: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.form-widget {
+    overflow: hidden;
+}
+
+#paydockWidget3ds iframe {
+    border: 0;
+    width: 100%;
+    height: 360px;
+}
+
+#paydockWidgetApm img {
+    margin-top: 50px;
+}
+
+#paydockWidgetApm img {
+    margin: 0 50px;
+}
+
+.btn-apm {
+    all: unset;
+    cursor: pointer;
+}
+
+.apms-button-wrapper {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.paydock-validation-error {
+    color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.paydock-country-available {
+    color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.paydock-cvv-code input {
+    -webkit-text-security: disc;
+    text-security: disc;
+}
+
+
+#paymentCompleted {
+    min-height: 320px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.paudock-wallets-buttons {
+    margin-bottom: 20px;
+}
+
+.paudock-wallets-buttons button {
+    width: 150px;
+}
+
+#paydockWidgetWallets {
+    -webkit-display: flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    -moz-display: flex;
+    -moz-flex-wrap: wrap;
+    -moz-justify-content: space-between;
+    -moz-align-items: center;
+    -o-display: flex;
+    -o-flex-wrap: wrap;
+    -o-justify-content: space-between;
+    -o-align-items: center;
+    -ms-display: flex;
+    -ms-flex-wrap: wrap;
+    -ms-justify-content: space-between;
+    -ms-align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#paydockWidgetWallets #paymentCompleted {
+    display: none !important;
+}
+
+#paydockWidgetWallets {
+    flex-direction: column;
+}
+
+#paydockWalletGooglePayButton{
+    height: 55px;
+}
+
+.paydock-apple-container {
+    display: block;
+    width: 150px !important;
+    height: 55px !important;
+    box-sizing: border-box;
+}
+
+.paydock-payment-method-label-logo {
+    margin: -6px 1em -6px auto;
+    height: 36px !important;
+    max-height: 36px !important;
+}
+
+.paydock-payment-method-label {
+    display: flex;
+    align-content: center;
+    box-sizing: content-box;
+    width: 100%;
+}
+.paydock-payment-method-label-icon {
+    margin-right: 5px;
+}
+.paydock-payment-method-label-icon.pay-pal{
+    height: 20px !important;
+    max-height: 20px !important;
+    margin-top: 2px;
+}
+.paydock-payment-method-label-icon.zip{
+    height: 20px !important;
+    max-height: 20px !important;
+    margin: -1px 13px;
+}
+.paydock-payment-method-label-icon.afterpay{
+    margin: auto 6px;
+}
+.paydock-payment-method-label-icon.google-pay{
+    margin: -1px 17px;
+}
+.paydock-payment-method-label-icon.apple-pay{
+    margin: -1px 11px;
+}
+.paydock-payment-method-label-icon.card{
+    margin: -1px 25px;
+}
+.paydock-payment-method-label-logo {
+    margin: -6px 1em -6px auto;
+    height: 36px !important;
+    max-height: 36px !important;
+}

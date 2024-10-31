@@ -1,0 +1,272 @@
+.woocommerce table.form-table .select {
+    width: 400px;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
+    width: 100%;
+}
+
+.select .value {
+    color: #1c2730;
+    margin-bottom: -7px;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid #8c8f94;
+    padding: 4px 24px 7px 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    transition: all .25s ease-in-out;
+    position: relative;
+    z-index: 1;
+    max-height: 34px;
+}
+
+.select .value:hover {
+    border-color: #666;
+}
+
+.select .value:after {
+    transition: all .25s ease-in-out;
+    position: absolute;
+    content: " ";
+    right: 8px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    border-top: 5px solid #737373;
+}
+
+.select .error-text {
+    display: none;
+    position: absolute;
+    list-style: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #fc4545;
+    margin-top: 5px;
+}
+
+.select .select-wrap {
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    top: 100%;
+    position: absolute;
+    padding: 10px 0;
+    margin: 5px 0 0;
+}
+
+.select.-open .select-wrap {
+    display: block;
+}
+
+.woocommerce table.form-table .select .select-wrap input[type="text"] {
+    width: 100%;
+}
+
+.select ul {
+    padding: 0;
+    margin: 0;
+    max-height: 205px;
+    overflow-y: scroll;
+}
+
+.select .search-wrap {
+    margin: 0 15px 10px;
+}
+
+.select .search-wrap .error {
+    display: none;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.select .search {
+    color: #1C2730;
+    font-size: 14px;
+    line-height: 21px;
+    background: transparent;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 10px 14px 8px 14px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.select .search:hover {
+    border-color: #666;
+}
+
+
+.select ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.select ul::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+.select ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+    /*background-color: #555;*/
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(122, 153, 217)),
+    color-stop(0.72, rgb(73, 125, 189)),
+    color-stop(0.86, rgb(73, 125, 189)));
+}
+
+
+.select ul li:hover {
+    background: #f5f5f5;
+}
+
+.select ul, .select li {
+    padding: 0;
+    margin: 0;
+}
+
+.select ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.select label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 40px;
+    font-size: 14px;
+}
+
+.select label i {
+    position: relative;
+    width: 50px;
+    height: 28px;
+    margin-right: 10px;
+    display: block;
+    flex: 0 0 50px;
+}
+
+.select label img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.select.-open .value:after {
+    transform: rotate(-180deg) scale(1) skew(0deg) translate(0px);
+    border-top-color: rgba(73, 125, 189, 0.72);
+}
+
+input[type=checkbox].checkbox {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+/* other custom styles */
+.woocommerce table.form-table th label .woocommerce-help-tip {
+    right: auto !important;
+    margin-left: 5px !important;
+}
+
+.wrap h1 {
+    font-weight: 600;
+}
+
+.multiselect-paydock label {
+    display: flex !important;
+}
+
+.form-table td fieldset .multiselect-paydock label {
+    margin: 0 !important;
+}
+
+.multiselect-paydock input[type=checkbox].checkbox {
+    margin-left: 15px;
+}
+
+.multiselect-paydock .checkbox + label {
+    padding: 6px 20px 6px 45px;
+}
+
+.multiselect-paydock * {
+    box-sizing: border-box;
+}
+
+.multiselect-paydock .checkbox {
+    margin-top: 1px;
+}
+
+.multiselect-paydock .value:after {
+    border: none;
+    background: #fff url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E) no-repeat right 5px top 55%;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    background-size: 16px 16px;
+}
+
+.multiselect-paydock.-open .value:after {
+    transform: rotate(-180deg) scale(1) skew(0deg) translate(5px);
+}
+
+.multiselect-paydock .checkbox {
+    position: absolute;
+    margin: 0;
+    width: 0;
+    left: 15px;
+    top: 0;
+    opacity: 1;
+    bottom: 0;
+    margin: auto !important;
+}
+
+.multiselect-paydock ul li {
+    position: relative;
+}
+
+.woocommerce table.form-table input.input-text.regular-input.paydock {
+    width: 154px;
+    margin: auto 8px;
+}
+.woocommerce table.form-table .forminp fieldset {
+    line-height: 30px;
+
+}
